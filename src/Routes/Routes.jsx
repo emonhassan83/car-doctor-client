@@ -22,12 +22,12 @@ const router = createBrowserRouter([
         {
             path: '/serviceDetails/:id',
             element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
-            loader: ({params}) => fetch(`http://localhost:5000/serviceDetails/${params.id}`)
+            loader: ({params}) => fetch(`https://car-doctor-server-emon83.vercel.app/serviceDetails/${params.id}`)
         },
         {
             path: '/checkout/:id',
             element:<Checkout></Checkout>,
-            loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+            loader: ({params}) => fetch(`https://car-doctor-server-emon83.vercel.app/services/${params.id}`)
         },
         {
           path: '/bookings',

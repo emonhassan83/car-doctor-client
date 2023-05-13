@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Product from "../Product/Product";
 
+
 const ProductSection = () => {
     const [products, setProducts] = useState([]);
 

@@ -1,4 +1,5 @@
-//import { Rating } from "@smastrom/react-rating";
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 
 const Product = ({singleProduct}) => {
     //console.log(singleProduct);
@@ -14,6 +15,9 @@ const Product = ({singleProduct}) => {
                value={5}
                readOnly
             /> */}
+             <div className='flex justify-center mt-5'>
+            <Rating style={{ maxWidth: 100 }} value={5} />
+            </div>
             <h4 className="text-xl font-bold">{title}</h4>
             <p className="text-lg text-orange-500 font-semibold">Price: {price}</p>
             </div>
